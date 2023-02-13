@@ -1,0 +1,32 @@
+<input maxlength="{{maxlength}}" minlength="{{minlength}}" min="{{min}}" max="{{max}}" id="{{id}}" class={{class}}
+  [formControl]="ngControl.control" type={{type}} placeholder={{placeholder}}
+  [class.form_validation-error]="ngControl.touched && ngControl.invalid">
+
+
+<p class="validation-error text-danger" *ngIf="ngControl.control.errors?.['required']">
+  *{{placeholder}} daxil etməlisiniz!
+</p>
+
+<p class="validation-error text-danger" *ngIf="ngControl.control.errors?.['maxlength']">
+  *{{placeholder}} {{ngControl.control.errors.maxlength['requiredLength']}} simvoldan az olmalıdır!
+</p>
+
+<p class="validation-error text-danger" *ngIf="ngControl.control.errors?.['minlength']">
+  *{{placeholder}} {{ngControl.control.errors.minlength['requiredLength']}} simvoldan az olmamalıdır!
+</p>
+
+<p class="validation-error text-danger" *ngIf="ngControl.control.errors?.['pattern']">
+  *{{placeholder}} pattern e uyğun olmalıdır!
+</p>
+
+<p class="validation-error text-danger" *ngIf="ngControl.control.errors?.['min']">
+  *{{placeholder}} minimum {{ngControl.control.errors.min['min']}} ola bilər!
+</p>
+
+<p class="validation-error text-danger" *ngIf="ngControl.control.errors?.['max']">
+  *{{placeholder}} maximum {{ngControl.control.errors.max['max']}} ola bilər!
+</p>
+
+<p class="validation-error text-danger" *ngIf="ngControl.control.errors?.['mustBeLessThan']">
+  *{{placeholder}} kiçik olmalıdır!
+</p>

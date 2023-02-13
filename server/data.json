@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "firstName": "Farida",
+      "lastName": "Qocayeva",
+      "gender": "Qadın",
+      "email": "farida@gmail.com",
+      "phone": "+86 461 145 4186",
+      "username": "farida.fa",
+      "birthday": "1997-10-27T20:00:00.000Z",
+      "password": "farida5434",
+      "id": 4
+    },
+    {
+      "firstName": "Sevda",
+      "lastName": "Aliyeva",
+      "gender": "Kişi",
+      "email": "sevda@gmail.com",
+      "phone": 324556787,
+      "username": "sevda_se",
+      "birthday": "1999-06-14T19:00:00.000Z",
+      "password": "esvda65#$",
+      "id": 5
+    },
+    {
+      "firstName": "Fidan",
+      "lastName": "Haciyeva",
+      "gender": "Qadın",
+      "email": "fidan@mail.ru",
+      "phone": 98764578,
+      "username": "fidan_t56",
+      "birthday": "1997-05-11T19:00:00.000Z",
+      "password": "fidan78@#",
+      "id": 6
+    },
+    {
+      "firstName": "Fuad",
+      "lastName": "Nagiyev",
+      "gender": "Kişi",
+      "email": "fuad@mail.ru",
+      "phone": "42424242454",
+      "username": "sfdsds45",
+      "birthday": "2023-02-08T20:00:00.000Z",
+      "password": "fuad98@",
+      "id": 7
+    },
+    {
+      "firstName": "Murad",
+      "lastName": "Aliyev",
+      "gender": "Digər",
+      "email": "murad@mai.ru",
+      "phone": "6543343428",
+      "username": "murad.m",
+      "birthday": "1996-06-25T19:00:00.000Z",
+      "password": "murad98@#",
+      "id": 8
+    },
+    {
+      "firstName": "Example",
+      "lastName": "vcvcxvcxv",
+      "gender": "Qadın",
+      "email": "cxvcxvcxvcx",
+      "phone": "e5436543643",
+      "username": "vdsvds",
+      "birthday": "2023-02-27T20:00:00.000Z",
+      "password": "vdssgdgdsg",
+      "id": 9
+    }
+  ]
+}

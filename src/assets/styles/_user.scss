@@ -1,0 +1,57 @@
+.add-content {
+  padding: 1rem;
+
+  .content-line {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+
+    mat-form-field {
+      width: 100%;
+    }
+
+    mat-radio-group {
+      padding: 1rem 0;
+
+      .mat-radio-button {
+        margin-left: 1.4rem;
+      }
+    }
+  }
+}
+
+table thead{
+  background-color: $primary-color;
+  color: white;
+  font-weight: bold;
+  padding: 2rem 0 !important;
+}
+
+mat-dialog-actions {
+  button {
+    flex: 1;
+  }
+}
+
+.user-list {
+  table {
+    .controls {
+      a {
+        i {
+          padding: 0.7rem;
+          border-radius: 0.1rem;
+          color: $white-color;
+          background-color: $primary-color;
+          cursor: pointer;
+        }
+      }
+      .delete{
+        i{
+          background: $red-color;
+          cursor: pointer;
+        }
+      }
+    }
+    tr{vertical-align: middle;}
+  }
+}

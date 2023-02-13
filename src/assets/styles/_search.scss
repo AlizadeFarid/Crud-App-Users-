@@ -1,0 +1,23 @@
+.search {
+  width: 100%;
+  padding: 0;
+
+  .search-input {
+    position: relative;
+  }
+
+  .clear-icon {
+    position: absolute;
+    top: 12%;
+    right: 1px;
+    transition: transform .3s linear;
+    color: red;
+    font-size: 25px;
+    font-weight: 100;
+    visibility: hidden;
+    cursor: pointer;
+    &.active{
+      visibility: visible;
+    }
+  }
+}

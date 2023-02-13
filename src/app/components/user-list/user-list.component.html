@@ -1,0 +1,44 @@
+<div class="container mt-3 user-list">
+  <div class="row">
+    <app-search (filterTextFromParent)="filterChanged($event)"></app-search>
+  </div>
+  <div class="row">
+    <table class="table table-hover border shadow" *ngIf="USERS$ | async">
+      <thead>
+        <tr class="text-center">
+          <th class="py-3">Sıra No:</th>
+          <th class="py-3">Ad</th>
+          <th class="py-3">Soyad</th>
+          <th class="py-3">Cins</th>
+          <th class="py-3">E-poçt</th>
+          <th class="py-3">Telefon</th>
+          <th class="py-3">İstifadəçi adı</th>
+          <th class="py-3">Şifrə</th>
+          <th class="py-3">Doğum Tarixi</th>
+          <th class="py-3">İdarə et</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="text-center" *ngFor="let user of USERS$|async">
+          <th scope="row">{{user.id}}</th>
+          <td>{{user.firstName}}</td>
+          <td>{{user.lastName}}</td>
+          <td>{{user.gender}}</td>
+          <td>{{user.email}}</td>
+          <td>{{user.phone}}</td>
+          <td>{{user.username}}</td>
+          <td>{{user.password}}</td>
+          <td>{{user.birthday | date: 'dd.MM.yyyy'}}</td>
+          <td class="controls">
+            <a (click)="editUserDialog(user.id)" class="edit">
+              <i class="fas fa-pen me-2"></i>
+            </a>
+            <a (click)="deleteUser(user.id)" class="delete">
+              <i class="fas fa-trash-alt"></i>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
